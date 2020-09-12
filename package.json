@@ -1,0 +1,22 @@
+{
+  "name": "cs-325-project",
+  "version": "1.0.0",
+  "description": "website for fitness",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRealNachoLibre/CS-325-Project.git"
+  },
+  "keywords": [
+    "responsive"
+  ],
+  "author": "Grant Grisham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRealNachoLibre/CS-325-Project/issues"
+  },
+  "homepage": "https://github.com/TheRealNachoLibre/CS-325-Project#readme"
+}

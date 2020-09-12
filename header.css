@@ -1,0 +1,45 @@
+.body {
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(188, 231, 233) 36%, rgba(91,202,224,1) 100%);
+}
+
+/* this is the header css */
+#headrr {
+    padding-top: 1%; 
+    padding-bottom: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #DCAE96;
+}
+
+.col-md-4 .calculator {
+    color: white;
+    padding-top: 5px;
+}
+
+.col-md-4 .head-name {
+    color: white;
+    font-size: x-large;
+}
+
+.col-md-4 .login {
+    color: white;
+    padding-top: 5px;
+}
+
+.img-content .img-fluid {
+    z-index: 0;
+}
+
+.img-content .text-box-a {
+    z-index: 1; 
+    height: 50%; 
+    overflow: hidden;
+    position: relative;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.img-content .main-text {
+    z-index: 1;
+}
