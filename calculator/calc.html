@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../header.css"> 
+    <link rel="stylesheet" href="./calc.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Gains & Losses</title>
 </head>
@@ -28,5 +29,41 @@
         </div>
     </div>
 
+    <div class="cardContainer">
+            <h2 style="font-size: 3vw;">Please enter the following questions: </h2>
+        <div class="card col-md-8 text-center w-50">
+            <label for="weight">Current Weight:</label>
+            <input type="number" id="fweight" name="fweight">
+            <label for="target">Target Weight:</label>
+            <input type="number" id="target" name="target">
+            <div class="radiobox"> 
+                <div>
+                    <input type="radio" id="gain" name="drone" value="gain"
+                    checked>
+                    <label for="gain">Gain</label>
+                </div>
+                <div>
+                    <input type="radio" id="maintain" name="drone" value="maintain"
+                    checked>
+                    <label for="maintain">Maintain</label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-primary btn-sm">Submit</button>
+        </div>
+    </div>
+
+    <div class="response">
+          <div class="response col-md-8">
+            <h2 style="font-size: 3vw;">The recommended workout plan:</h2>
+            <div class="response-box">
+                <ul>
+                    <li>This hasn't been implemented.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        
+    
 </body>
 </html>
