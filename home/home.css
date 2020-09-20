@@ -24,19 +24,21 @@
     background: rgba(204, 204,204, .1);
     
 }
+/*
 @media screen and (min-width: 1000px) {
   .text-box {
     top: 45%;
   }
 }
-
+*/
 @media screen and (min-width: 601px) {
   .text-box {
     font-size: 80px;
     left: 50%;
   }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1000px) {
   .text-box {
     font-size: 50px;
     left: 50%;
@@ -48,6 +50,14 @@
     z-index: 2;
     position: relative;
 }
+
+/*This is for the dietary recommendations 
+.dietBox, .card {
+  display: inline; 
+  padding-bottom: 50px;
+}
+*/
+
 
 /* Slider */
 @media screen and (min-width: 601px) {
