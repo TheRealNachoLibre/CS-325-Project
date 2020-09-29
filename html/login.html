@@ -4,64 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../header.css"> 
-    <link rel="stylesheet" href="./calc.css">
+    <link rel="stylesheet" href="../css/header.css"> 
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Gains & Losses</title>
 </head>
 <body>
     <div id="headrr" class="row text-center">
         <div class="col-md-4">
-            <a href="../calculator/calc.html" class="calculator">CALCULATOR</a>
+            <a href="../html/calc.html" class="calculator">CALCULATOR</a>
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calculator-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z"/>
             </svg>
         </div>
         <div class="col-md-4">
-            <a href="../home/home.html" class="head-name">GAINS & LOSSES</a>
+            <a href="../html/home.html" class="head-name">GAINS & LOSSES</a>
         </div>
         <div class="col-md-4">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                 <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
             </svg>
-            <a href="../login/login.html" class="login">LOGIN</a>
+            <a href="../html/login.html" class="login">LOGIN</a>
         </div>
     </div>
 
-    <div class="cardContainer">
-            <h2 style="font-size: 3vw;">Please enter the following questions: </h2>
-        <div class="card col-md-8 text-center w-50">
-            <label for="weight">Current Weight:</label>
-            <input type="number" id="fweight" name="fweight">
-            <label for="target">Target Weight:</label>
-            <input type="number" id="ftarget" name="ftarget">
-            <div class="radiobox"> 
-                <div>
-                    <input type="radio" id="gain" name="drone" value="gain"
-                    checked>
-                    <label for="gain">Gain</label>
-                </div>
-                <div>
-                    <input type="radio" id="maintain" name="drone" value="maintain" 
-                    checked>
-                    <label for="maintain">Maintain</label>
-                </div>
+    <div class="loginform" >
+        <div class="login">
+            <div class="login-header">
+            <h1>Login</h1>
             </div>
-            <button type="button" onclick="calculate()" class="btn btn-outline-primary btn-sm">Submit</button>
-        </div>
-    </div>
-
-    <div class="response">
-          <div class="response col-md-8" id="workout-plan">
-            <h2 style="font-size: 3vw;">The recommended workout plan:</h2>
-            <div class="response-box">
-                <ul>
-                    <li style="font-size: 2vw;" id="message"></li>
-                </ul>
+            <div class="login-form">
+            <h3>Username:</h3>
+            <input type="text" placeholder="Username"/><br>
+            <h3>Password:</h3>
+            <input type="password" placeholder="Password"/>
+            <br>
+            <input type="button" value="Login" class="login-button"/>
+            <br>
+            <a class="sign-up">Sign Up!</a>
+            <br>
+            <h6 class="no-access">Can't access your account?</h6>
             </div>
         </div>
+        <div class="error-page">
+            <div class="try-again">Error: Try again?</div>
+        </div>
     </div>
-     <script src="./calc.js"></script>   
 </body>
 </html>
