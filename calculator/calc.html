@@ -35,7 +35,7 @@
             <label for="weight">Current Weight:</label>
             <input type="number" id="fweight" name="fweight">
             <label for="target">Target Weight:</label>
-            <input type="number" id="target" name="target">
+            <input type="number" id="ftarget" name="ftarget">
             <div class="radiobox"> 
                 <div>
                     <input type="radio" id="gain" name="drone" value="gain"
@@ -43,27 +43,25 @@
                     <label for="gain">Gain</label>
                 </div>
                 <div>
-                    <input type="radio" id="maintain" name="drone" value="maintain"
+                    <input type="radio" id="maintain" name="drone" value="maintain" 
                     checked>
                     <label for="maintain">Maintain</label>
                 </div>
             </div>
-            <button type="button" class="btn btn-outline-primary btn-sm">Submit</button>
+            <button type="button" onclick="calculate()" class="btn btn-outline-primary btn-sm">Submit</button>
         </div>
     </div>
 
     <div class="response">
-          <div class="response col-md-8">
+          <div class="response col-md-8" id="workout-plan">
             <h2 style="font-size: 3vw;">The recommended workout plan:</h2>
             <div class="response-box">
                 <ul>
-                    <li>This hasn't been implemented.</li>
+                    <li style="font-size: 2vw;" id="message"></li>
                 </ul>
             </div>
         </div>
     </div>
-
-        
-    
+     <script src="./calc.js"></script>   
 </body>
 </html>
