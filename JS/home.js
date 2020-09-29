@@ -6,3 +6,11 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+function openNav2() {
+  document.getElementById("loginnav").style.width="45%"; 
+}
+
+function closeNav2() {
+  document.getElementById("loginnav").style.width="0"; 
+}

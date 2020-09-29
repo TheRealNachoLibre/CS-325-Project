@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="../css/header.css"> 
     <link rel="stylesheet" href="../css/calc.css">
     <link rel="stylesheet" href="../css/home.css"> 
+    <link rel="stylesheet" href="../css/login.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Gains & Losses</title>
 </head>
 <body>
+    <!--HTML for the calculator side bar-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="cardContainer">
@@ -49,7 +51,23 @@
         </div>
     </div>
     </div>
-      <!-- Use any element to open the sidenav -->
+  
+    <!--HTML for the login side bar-->
+    <div id="loginnav" class="loginnav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <div class="wrapper">
+            <form class="form-signin">       
+              <h2 class="form-signin-heading">Please login</h2>
+              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+              </label>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+            </form>
+        </div>
+    </div>
+
 
     <div class="body">
         <div id="headrr" class="row text-center">
@@ -67,7 +85,7 @@
                     <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                     <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
                 </svg>
-                <a href="../html/login.html" class="login">LOGIN</a>
+                <span onclick="openNav2()" class="login">LOGIN</span>
             </div>
         </div>
 
@@ -77,7 +95,7 @@
             <img src="../img/file.large.jpg" class="img-fluid d-block w-100" alt="workout world img" width="1440" height="700">
             <div class="text-box">
                 <h1 class="main-text text-center font-weight-bold" style="font-size:4vw;">Gains are simply one click away!</h1>
-                <a href="../calculator/calc.html"><button type="button" class="btn btn-info" style="font-size:2vw;">Ready?</button></a>
+                <a onclick="openNav()"><button type="button" class="btn btn-info" style="font-size:2vw;">Ready?</button></a>
             </div>
         </div>
         </div>
@@ -181,5 +199,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="../JS/home.js"></script>
     <script src="../JS/calc.js"></script>
+    <script src="../JS/login.js"></script>
 </body>
 </html>

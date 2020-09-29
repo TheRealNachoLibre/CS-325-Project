@@ -4,6 +4,10 @@ body {
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(188, 231, 233) 36%, rgba(91,202,224,1) 100%);
 }
 
+.calculator, .head-name, .login :hover {
+    cursor: pointer;
+  }  
+
 /* this is the header css */
 #headrr {
     padding-top: 1%; 

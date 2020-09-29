@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css"> 
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/login.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Gains & Losses</title>
 </head>
@@ -29,27 +30,16 @@
         </div>
     </div>
 
-    <div class="loginform" >
-        <div class="login">
-            <div class="login-header">
-            <h1>Login</h1>
-            </div>
-            <div class="login-form">
-            <h3>Username:</h3>
-            <input type="text" placeholder="Username"/><br>
-            <h3>Password:</h3>
-            <input type="password" placeholder="Password"/>
-            <br>
-            <input type="button" value="Login" class="login-button"/>
-            <br>
-            <a class="sign-up">Sign Up!</a>
-            <br>
-            <h6 class="no-access">Can't access your account?</h6>
-            </div>
-        </div>
-        <div class="error-page">
-            <div class="try-again">Error: Try again?</div>
-        </div>
-    </div>
+    <div class="wrapper">
+        <form class="form-signin">       
+          <h2 class="form-signin-heading">Please login</h2>
+          <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+          <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+          <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+          </label>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+        </form>
+      </div>
 </body>
 </html>
