@@ -1,5 +1,5 @@
 .cardContainer {
-    padding-left: 34%;
+    padding-left: 5%;
 }
 
 
@@ -12,7 +12,7 @@
 }
 
 .response {
-    padding-left: 33%;
+    padding-left: 5%;
     padding-top: 50px;
 }
 
@@ -30,3 +30,11 @@
         padding-left: 10%;
     }
   }
+
+.cardContainer label{ 
+    color: black; 
+}
+
+.cardContainer h2, .response {
+    color: rgb(196, 196, 196); 
+}

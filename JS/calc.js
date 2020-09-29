@@ -13,11 +13,7 @@ function calculate() {
     weight = document.getElementById('fweight');
     target = document.getElementById('ftarget');
     document.getElementById('workout-plan').style.visibility = "visible"; 
-    if (typeof(target.value) != 'number' || typeof(weight.value) != 'number') {
-        strenth = false; 
-        diet = false; 
-    }
-    else if (target.value < 0 || weight.value < 0) {
+    if (target.value < 0 || weight.value < 0) {
         strenth = false; 
         diet = false; 
     }
@@ -36,7 +32,7 @@ function updateMessage(diet, strenth) {
     let element = document.getElementById("message"); 
     console.log(strenth, diet); 
     if(!diet && !strenth) {
-        new_message = 'Please put a vlaid input into the calculator'; 
+        new_message = 'Please put a valid input into the calculator'; 
         element.textContent = new_message; 
     }
     else if (diet) {

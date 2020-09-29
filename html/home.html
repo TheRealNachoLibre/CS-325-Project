@@ -7,15 +7,54 @@
     <meta name="author" content="Grant Grisham">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css"> 
+    <link rel="stylesheet" href="../css/calc.css">
     <link rel="stylesheet" href="../css/home.css"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Gains & Losses</title>
 </head>
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="cardContainer">
+            <h2 style="font-size: 3vw;">Please enter the following questions: </h2>
+        <div class="card col-md-8 text-center w-50">
+            <label for="weight">Current Weight:</label>
+            <input type="number" id="fweight" name="fweight">
+            <label for="target">Target Weight:</label>
+            <input type="number" id="ftarget" name="ftarget">
+            <div class="radiobox"> 
+                <div>
+                    <input type="radio" id="gain" name="drone" value="gain"
+                    checked>
+                    <label for="gain">Gain</label>
+                </div>
+                <div>
+                    <input type="radio" id="maintain" name="drone" value="maintain" 
+                    checked>
+                    <label for="maintain">Maintain</label>
+                </div>
+            </div>
+            <button type="button" onclick="calculate()" class="btn btn-outline-primary btn-sm">Submit</button>
+        </div>
+    </div>
+
+    <div class="response">
+        <div class="response col-md-8" id="workout-plan">
+            <h2 style="font-size: 3vw;" id="workout-head">The recommended workout plan:</h2>
+            <div class="response-box">
+                <ul>
+                    <li style="font-size: 2vw;" id="message"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+      <!-- Use any element to open the sidenav -->
+
     <div class="body">
         <div id="headrr" class="row text-center">
             <div class="col-md-4">
-                <a href="../html/calc.html" class="calculator">CALCULATOR</a>
+                <span onclick="openNav()" class="calculator">CALCULATOR</span>
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calculator-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z"/>
                 </svg>
@@ -140,5 +179,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../JS/home.js"></script>
+    <script src="../JS/calc.js"></script>
 </body>
 </html>
