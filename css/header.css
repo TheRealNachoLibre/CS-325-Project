@@ -16,6 +16,10 @@ body {
     background-color: #DCAE96;
 }
 
+#headrr span :hover{
+    cursor: pointer;
+}
+
 .col-md-4 .calculator {
     color: white;
     padding-top: 5px;

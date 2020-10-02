@@ -3,9 +3,9 @@ function openNav() {
   }
   
   /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 function openNav2() {
   document.getElementById("loginnav").style.width="45%"; 
